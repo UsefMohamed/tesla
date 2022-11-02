@@ -5,9 +5,9 @@
   margin: 0;
 }
 
-html {
+/* html {
   scroll-snap-type: y proximity;
-}
+} */
 
 button {
   outline: none;
@@ -89,47 +89,28 @@ header .third-part ul > li:hover {
 }
 
 aside {
-  width: 350px;
+  opacity: 0;
+  width: 250px;
   height: 100vh;
   background-color: #fff;
   position: fixed;
   top: 0;
-  transition: 0.9s;
-  -webkit-transition: 0.9s;
-  -moz-transition: 0.9s;
-  -ms-transition: 0.9s;
-  -o-transition: 0.9s;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
   z-index: 1;
   overflow: scroll;
-  transform: translateX(-350px);
-  -webkit-transform: translateX(-350px);
-  -moz-transform: translateX(-350px);
-  -ms-transform: translateX(-350px);
-  -o-transform: translateX(-350px);
+  transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+  -moz-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -o-transform: translateX(-250px);
 }
 
-aside button {
-  font-size: 30px;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0.4rem;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  border: none;
-  background: #fff;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-aside button:hover {
-  background: #ddd;
+.opacity {
+  opacity: 1 !important;
 }
 
 aside .aside-links {
@@ -244,13 +225,13 @@ section .content .btn-holder {
 }
 
 section .content .btn-holder button {
-  padding: 5px 50px;
-  border: 1px solid #eee;
+  padding: 4px 24px;
+  width: 264px;
+  border: none;
   font-family: "M PLUS 1", sans-serif;
 }
 
 section .content .btn-holder button.btn-one {
-  border: none;
   background-color: #171a20;
   color: white;
   font-weight: bold;
@@ -259,14 +240,16 @@ section .content .btn-holder button.btn-one {
 section .content .btn-holder button.btn-two {
   background-color: #f4f4f4a6;
   color: black;
-  border: none;
   font-weight: bold;
 }
 
 @media (max-width: 991px) {
   section .content .btn-holder {
-    margin: 0 1rem;
+    display: block;
     font-size: 14px;
+  }
+  section .content .btn-holder button.btn-one {
+    margin-bottom: 1rem;
   }
 }
 

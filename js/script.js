@@ -10,6 +10,7 @@ document.onclick = function (e) {
 };
 menu_btn.onclick = function () {
   aside.classList.toggle("effect");
+  aside.classList.toggle("opacity");
 };
 closing_btn.onclick = function () {
   aside.classList.remove("effect");
