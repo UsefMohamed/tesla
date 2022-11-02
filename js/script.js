@@ -1,6 +1,5 @@
 let menu_btn = document.getElementById("menu_btn");
 let aside = document.getElementById("aside");
-let closing_btn = document.getElementById("closing_btn");
 
 document.onclick = function (e) {
   if (e.target.id == "aside" && e.target.id == "menu_btn") {
@@ -11,9 +10,6 @@ document.onclick = function (e) {
 menu_btn.onclick = function () {
   aside.classList.toggle("effect");
   aside.classList.toggle("opacity");
-};
-closing_btn.onclick = function () {
-  aside.classList.remove("effect");
 };
 let prog_bar = document.getElementById("prog-bar");
 let hieght =
