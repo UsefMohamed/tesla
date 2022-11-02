@@ -1,155 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/bootstrap.min.css.map">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css.map" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>tesla</title>
-</head>
+  </head>
 
-<body id="body">
+  <body id="body">
     <div id="prog-bar"></div>
     <header class="header">
-        <div class="first-part">
-            <a href="#" class="logo">
-                <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
-                        fill="currentColor"></path>
-                </svg>
-            </a>
-        </div>
-        <div class="second-part">
-            <ul class="p-0 m-0">
-                <li class="desktop">model s</li>
-                <li class="desktop">model 3</li>
-                <li class="desktop">model x</li>
-                <li class="desktop">model y</li>
-                <li class="desktop">solar roof</li>
-                <li class="desktop">solar panels</li>
-            </ul>
-        </div>
-        <div class="third-part">
-            <ul class="p-0 m-0">
-                <li class="desktop">shop</li>
-                <li class="desktop">account</li>
-                <li id="menu_btn">menu</li>
-            </ul>
-        </div>
+      <div class="first-part">
+        <a href="#" class="logo">
+          <svg
+            class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+            viewBox="0 0 342 35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="second-part">
+        <ul class="p-0 m-0">
+          <li class="desktop" id="link">
+            <a href="#model_3" class="init-color">model 3</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#model_y" class="init-color">model y</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#model_s" class="init-color">model s</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#model_x" class="init-color">model x</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#solar_p" class="init-color">solar panels</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#solar_r" class="init-color">solar roof</a>
+          </li>
+          <li class="desktop" id="link">
+            <a href="#acc" class="init-color">accessories</a>
+          </li>
+        </ul>
+      </div>
+      <div class="third-part">
+        <ul class="p-0 m-0">
+          <li class="desktop">
+            <a href="#" class="link-1 init-color">shop</a>
+          </li>
+          <li class="desktop">
+            <a href="#" class="link-1 init-color">account</a>
+          </li>
+          <li id="menu_btn">
+            <a href="#" class="link-1 init-color">menu</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <aside id="aside">
-        <button id="closing_btn">&times;</button>
-        <ul class="aside-links">
-            <li>Existing Inventory</li>
-            <li>Used Inventory</li>
-            <li>Trade-In</li>
-            <li>Test Drive</li>
-            <li>Insurance</li>
-            <li>Cybertruck</li>
-            <li>Roadster</li>
-            <li>Semi</li>
-            <li>Charging</li>
-            <li>Powerwall</li>
-            <li>Commercial Energy</li>
-            <li>Utilities</li>
-            <li>Find Us</li>
-            <li>Support</li>
-            <li>Investor Relations</li>
-        </ul>
+      <button id="closing_btn">&times;</button>
+      <ul class="aside-links">
+        <li>Existing Inventory</li>
+        <li>Used Inventory</li>
+        <li>Trade-In</li>
+        <li>Test Drive</li>
+        <li>Insurance</li>
+        <li>Cybertruck</li>
+        <li>Roadster</li>
+        <li>Semi</li>
+        <li>Charging</li>
+        <li>Powerwall</li>
+        <li>Commercial Energy</li>
+        <li>Utilities</li>
+        <li>Find Us</li>
+        <li>Support</li>
+        <li>Investor Relations</li>
+      </ul>
     </aside>
-    <section class="one">
-        <div class="content">
-            <div class="model-content">
-                <h1>Model 3</h1>
-                <p>Order Online for <a href="#">Touchless Delivery</a></p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">Custom Order</button>
-                <button class="btn-two">Existing Inventory</button>
-            </div>
+    <section class="one" id="model_3">
+      <div class="content">
+        <div class="model-content">
+          <h1>Model 3</h1>
+          <p>Order Online for <a href="#">Touchless Delivery</a></p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">Custom Order</button>
+          <button class="btn-two">Existing Inventory</button>
+        </div>
+      </div>
     </section>
-    <section class="two">
-        <div class="content">
-            <div class="model-content">
-                <h1>Model y</h1>
-                <p>Order Online for <a href="#">Touchless Delivery</a></p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">Custom Order</button>
-                <button class="btn-two">Existing Inventory</button>
-            </div>
+    <section class="two" id="model_y">
+      <div class="content" id="j">
+        <div class="model-content">
+          <h1>Model y</h1>
+          <p>Order Online for <a href="#">Touchless Delivery</a></p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">Custom Order</button>
+          <button class="btn-two">Existing Inventory</button>
+        </div>
+      </div>
     </section>
-    <section class="three">
-        <div class="content">
-            <div class="model-content">
-                <h1>Model s</h1>
-                <p>Order Online for <a href="#">Touchless Delivery</a></p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">Custom Order</button>
-                <button class="btn-two">Existing Inventory</button>
-            </div>
+    <section class="three" id="model_s">
+      <div class="content">
+        <div class="model-content">
+          <h1>Model s</h1>
+          <p>Order Online for <a href="#">Touchless Delivery</a></p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">Custom Order</button>
+          <button class="btn-two">Existing Inventory</button>
+        </div>
+      </div>
     </section>
-    <section class="four">
-        <div class="content">
-            <div class="model-content">
-                <h1>Model x</h1>
-                <p>Order Online for <a href="#">Touchless Delivery</a></p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">Custom Order</button>
-                <button class="btn-two">Existing Inventory</button>
-            </div>
+    <section class="four" id="model_x">
+      <div class="content">
+        <div class="model-content">
+          <h1>Model x</h1>
+          <p>Order Online for <a href="#">Touchless Delivery</a></p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">Custom Order</button>
+          <button class="btn-two">Existing Inventory</button>
+        </div>
+      </div>
     </section>
-    <section class="five">
-        <div class="content">
-            <div class="model-content">
-                <h1>Solar Panels</h1>
-                <p>Lowest Cost Solar Panels in America</p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">order now</button>
-                <button class="btn-two">learn now</button>
-            </div>
+    <section class="five" id="solar_p">
+      <div class="content">
+        <div class="model-content">
+          <h1>Solar Panels</h1>
+          <p>Lowest Cost Solar Panels in America</p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">order now</button>
+          <button class="btn-two">learn now</button>
+        </div>
+      </div>
     </section>
-    <section class="six">
-        <div class="content">
-            <div class="model-content">
-                <h1>Solar Roof</h1>
-                <p>Produce Clean Energy From Your Roof</p>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">order now</button>
-                <button class="btn-two">learn more</button>
-            </div>
+    <section class="six" id="solar_r">
+      <div class="content">
+        <div class="model-content">
+          <h1>Solar Roof</h1>
+          <p>Produce Clean Energy From Your Roof</p>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">order now</button>
+          <button class="btn-two">learn more</button>
+        </div>
+      </div>
     </section>
-    <section class="seven">
-        <div class="content">
-            <div class="model-content">
-                <h1>Accessories</h1>
-            </div>
-            <div class="btn-holder">
-                <button class="btn-one">order now</button>
-            </div>
+    <section class="seven" id="acc">
+      <div class="content">
+        <div class="model-content">
+          <h1>Accessories</h1>
         </div>
+        <div class="btn-holder">
+          <button class="btn-one">order now</button>
+        </div>
+      </div>
     </section>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
-</body>
-
+  </body>
 </html>

@@ -1,233 +1,270 @@
 * {
-    box-sizing: border-box;
-    text-transform: capitalize;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
 }
 
 button {
-    outline: none;
+  outline: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+.init-color {
+  text-decoration: none;
+  color: initial;
+}
+
+.init-color:hover {
+  color: initial;
 }
 
 .effect {
-    transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
 
 #prog-bar {
-    position: fixed;
-    top: 0;
-    width: 0px;
-    height: 5px;
-    background: #00bcd4;
+  position: fixed;
+  top: 0;
+  width: 0px;
+  height: 5px;
+  background: #00bcd4;
 }
 
 header {
-    font-family: 'M PLUS 1', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 32px;
-
+  font-family: "M PLUS 1", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
 }
 
 header .first-part a {
-    color: initial;
+  color: initial;
 }
 
-header .first-part a>svg {
-    width: 100px;
-    height: 12px;
+header .first-part a > svg {
+  width: 100px;
+  height: 12px;
 }
 
 header .second-part ul,
 .header .third-part ul {
-    display: flex;
+  display: flex;
 }
 
-header .second-part ul>li,
-header .third-part ul>li {
-    transition: .5s;
-    color: #171a20;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px 10px;
+header .second-part ul > li,
+header .third-part ul > li {
+  color: #171a20;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-header .second-part ul>li:hover,
-header .third-part ul>li:hover {
-    background: #eaedf1;
+header .second-part ul > li:hover,
+header .third-part ul > li:hover {
+  background: #eaedf1;
 }
 
-@media (max-width:991px) {
-    .desktop {
-        display: none;
-    }
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
 }
 
 aside {
-    transform: translateX(-350px);
-    width: 350px;
-    height: 100vh;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    transition: .9s;
-    z-index: 1;
-    overflow: scroll;
+  width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
+  z-index: 1;
+  overflow: scroll;
+  transform: translateX(-350px);
+  -webkit-transform: translateX(-350px);
+  -moz-transform: translateX(-350px);
+  -ms-transform: translateX(-350px);
+  -o-transform: translateX(-350px);
 }
 
 aside button {
-    font-size: 30px;
-    height: 25px;
-    width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.4rem;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    border: none;
-    background: #fff;
-    transition: .5s;
+  font-size: 30px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.4rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background: #fff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 aside button:hover {
-    background: #ddd;
+  background: #ddd;
 }
 
 aside .aside-links {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    font-family: 'M PLUS 1', sans-serif;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
 aside .aside-links li {
-    margin-bottom: 1vh;
-    color: #393c41;
-    cursor: pointer;
-    transition: .5s;
-    padding: 4px 8px;
-    background-color: #fff;
-    width: 90%;
-    transition: .5s;
-    font-size: 17px
+  margin-bottom: 1vh;
+  color: #393c41;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  padding: 4px 8px;
+  background-color: #fff;
+  width: 90%;
+  font-size: 17px;
 }
 
 aside .aside-links li:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
-section {
-    height: 100vh;
+section.one,
+section.two,
+section.three,
+section.four,
+section.five,
+section.six,
+section.seven {
+  height: 100vh;
 }
 
-.one {
-    background-image: url(../imgs/car_1.jpg);
-    background-size: cover;
-    background-position: center center;
+section.one {
+  background-image: url(../imgs/car_1.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.two {
-    background-image: url(../imgs/car_2.jpg);
-    background-size: cover;
-    background-position: center center;
+section.two {
+  background-image: url(../imgs/car_2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.three {
-    background-image: url(../imgs/car_3.jpg);
-    background-size: cover;
-    background-position: center center;
+section.three {
+  background-image: url(../imgs/car_3.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.four {
-    background-image: url(../imgs/car_4.jpg);
-    background-size: cover;
-    background-position: center center;
+section.four {
+  background-image: url(../imgs/car_4.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.five {
-    background-image: url(../imgs/solar_roof.webp);
-    background-size: cover;
-    background-position: center center;
+section.five {
+  background-image: url(../imgs/solar_roof.webp);
+  background-size: cover;
+  background-position: center center;
 }
 
-.six {
-    background-image: url(../imgs/roof.jpg);
-    background-size: cover;
-    background-position: center center;
+section.six {
+  background-image: url(../imgs/roof.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.seven {
-    background-image: url(../imgs/accerssories.jpg);
-    background-size: cover;
-    background-position: center center;
+section.seven {
+  background-image: url(../imgs/accerssories.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 section .content {
-    width: 100%;
-    height: 100vh;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section .content .model-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #20232b;
-    font-family: 'M PLUS 1', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #20232b;
+  font-family: "M PLUS 1", sans-serif;
 }
 
-section .content .model-content p>a {
-    color: initial;
+section .content .model-content p > a {
+  color: initial;
 }
 
 section .content .btn-holder {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 section .content .btn-holder button {
-    padding: 5px 50px;
-    border: 1px solid #eee;
-    font-family: 'M PLUS 1', sans-serif;
+  padding: 5px 50px;
+  border: 1px solid #eee;
+  font-family: "M PLUS 1", sans-serif;
 }
 
 section .content .btn-holder button.btn-one {
-    border: none;
-    background-color: #171a20;
-    color: white;
-    font-weight: bold;
+  border: none;
+  background-color: #171a20;
+  color: white;
+  font-weight: bold;
 }
 
 section .content .btn-holder button.btn-two {
-    background-color: #f4f4f4a6;
-    color: black;
-    border: none;
-    font-weight: bold;
+  background-color: #f4f4f4a6;
+  color: black;
+  border: none;
+  font-weight: bold;
 }
 
-@media (max-width:991px) {
-    section .content .btn-holder {
-        margin: 0 1rem;
-        font-size: 14px
-    }
+@media (max-width: 991px) {
+  section .content .btn-holder {
+    margin: 0 1rem;
+    font-size: 14px;
+  }
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
