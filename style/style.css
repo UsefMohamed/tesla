@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
 button {
   outline: none;
 }
@@ -166,6 +170,7 @@ section.five,
 section.six,
 section.seven {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 section.one {
