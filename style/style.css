@@ -48,6 +48,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 32px;
+  position: fixed;
+  width: 100vw;
 }
 
 header .first-part a {
@@ -77,9 +79,11 @@ header .third-part ul > li {
   -o-transition: 0.5s;
 }
 
-header .second-part ul > li:hover,
-header .third-part ul > li:hover {
-  background: #eaedf1;
+.aside-btn {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 15%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 @media (max-width: 991px) {
@@ -88,6 +92,15 @@ header .third-part ul > li:hover {
   }
 }
 
+aside button {
+  text-align: end;
+  padding: 0.5rem;
+  font-size: 30px;
+  border: none;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
 aside {
   opacity: 0;
   width: 250px;
@@ -95,12 +108,12 @@ aside {
   background-color: #fff;
   position: fixed;
   top: 0;
-  transition: 0.5s ease-out;
-  -webkit-transition: 0.5s ease-out;
-  -moz-transition: 0.5s ease-out;
-  -ms-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
   z-index: 1;
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  -moz-transition: 1s ease-out;
+  -ms-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
   overflow: scroll;
   transform: translateX(-250px);
   -webkit-transform: translateX(-250px);
@@ -114,8 +127,6 @@ aside {
 }
 
 aside .aside-links {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   font-family: "M PLUS 1", sans-serif;
   font-weight: bold;
   display: flex;
@@ -135,7 +146,7 @@ aside .aside-links li {
   -o-transition: 0.5s;
   padding: 4px 8px;
   background-color: #fff;
-  width: 90%;
+  width: 100%;
   font-size: 17px;
 }
 
@@ -151,7 +162,8 @@ section.five,
 section.six,
 section.seven {
   height: 100vh;
-  scroll-snap-align: center;
+  background-attachment: fixed;
+  scroll-snap-align: start;
 }
 
 section.one {
