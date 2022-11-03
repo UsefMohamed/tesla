@@ -4,11 +4,6 @@
   padding: 0;
   margin: 0;
 }
-
-html {
-  scroll-snap-type: y proximity;
-}
-
 button {
   outline: none;
 }
@@ -163,7 +158,6 @@ section.six,
 section.seven {
   height: 100vh;
   background-attachment: fixed;
-  scroll-snap-align: start;
 }
 
 section.one {
