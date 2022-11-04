@@ -172,7 +172,6 @@ section.five,
 section.six,
 section.seven {
   height: 100vh;
-  background-attachment: fixed;
 }
 
 section.one {
